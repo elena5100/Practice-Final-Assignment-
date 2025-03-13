@@ -1,0 +1,163 @@
+/* ========================= */
+/* Personal Fitness Tracker - Global Styles */
+/* ========================= */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 15px;
+}
+
+/* ========================= */
+/* Home Page Styles */
+/* ========================= */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.duration-input, .date {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+textarea {
+    height: 80px;
+}
+
+textarea::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* ========================= */
+/* Summary Page Styles */
+/* ========================= */
+.summary-container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.workout-entry {
+    border: 1px solid #4CAF50;
+    padding: 12px;
+    margin: 12px auto;
+    border-radius: 6px;
+    background: #f9f9f9;
+    text-align: left;
+}
+
+.workout-entry p {
+    margin: 6px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Return Button Styling */
+.return-button {
+    display: block;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: bold;
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.return-button:hover {
+    background: #0056b3;
+}

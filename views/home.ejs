@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Fitness Tracker</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Personal Fitness Tracker</h2>
+        <form action="/log" method="POST">
+            <label>Workout Type:</label>
+            <select name="workoutType">
+                <option>Running</option>
+                <option>Weightlifting</option>
+                <option>Yoga</option>
+                <option>Cycling</option>
+                <option>Other</option>
+            </select>
+
+            <label>Duration (minutes):</label>
+            <input type="number" name="duration" class="duration-input">
+
+
+            <label>Intensity Level:</label>
+            <input type="radio" name="intensity" value="Low"> Low
+            <input type="radio" name="intensity" value="Medium"> Medium
+            <input type="radio" name="intensity" value="High"> High
+
+            <label>Date:</label>
+            <input type="date" name="date" class="date" >
+
+            <label for="notes">Notes:</label>
+<textarea name="notes" id="notes" placeholder="Additional comments..."></textarea>
+
+
+            <button type="submit">Log Workout</button>
+        </form>
+    </div>
+</body>
+</html>

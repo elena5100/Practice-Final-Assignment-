@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logged Workouts</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    </head>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Logged Workouts</h2>
+        <% workouts.forEach(workout => { %>
+            <div class="workout-entry">
+                <p><strong>Workout Type:</strong> <%= workout.workoutType %></p>
+                <p><strong>Duration:</strong> <%= workout.duration %> minutes</p>
+                <p><strong>Intensity:</strong> <%= workout.intensity %></p>
+                <p><strong>Date:</strong> <%= workout.date %></p>
+                <p><strong>Notes:</strong> <%= workout.notes %></p>
+            </div>
+        <% }); %>
+        <a href="/" class="return-button">Log Another Workout</a>
+
+    </div>
+</body>
+</html>
